@@ -1,0 +1,15 @@
+{
+  "name": "od-business-test",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "在TestFlow之上编排OD已部署业务验收",
+  "engines": {"node": ">=22.18 <23"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node src/cli.js",
+    "test:protocol": "jest --config jest.config.cjs --runInBand"
+  },
+  "dependencies": {"@modelcontextprotocol/sdk": "1.32.1"},
+  "devDependencies": {"jest": "29.7.0", "typescript": "5.9.3"}
+}

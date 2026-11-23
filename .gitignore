@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.local/
+.business-test/
+.env
+.env.*
+coverage/
+.DS_Store
+
+# 项目专用插件测试资产暂不入库
+/testing/testflow-local/

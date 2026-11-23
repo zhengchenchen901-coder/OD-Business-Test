@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "environmentId": "test-server",
+  "catalogFile": "../catalog/od-units.json",
+  "stateRoot": "../.business-test",
+  "maxWaitMs": 300000,
+  "pollMs": 1000,
+  "testflow": {
+    "command": "/absolute/path/to/node22",
+    "args": [
+      "/absolute/path/to/testflow/launch.cjs",
+      "mcp"
+    ],
+    "workspaceFile": "/absolute/path/to/business-test.workspace.local.json",
+    "envFrom": []
+  },
+  "projects": {
+    "be": {
+      "root": "/absolute/path/to/OD-Yennefer-BE",
+      "testflowProjectId": "be",
+      "deployedSha": null,
+      "versionId": "be-release"
+    },
+    "web": {
+      "root": "/absolute/path/to/OD-Yennefer-Web-Order",
+      "testflowProjectId": "h5",
+      "deployedSha": null,
+      "versionId": "web-release"
+    },
+    "mgr": {
+      "root": "/absolute/path/to/OD-New-MgrEnd",
+      "testflowProjectId": "mgr",
+      "deployedSha": null,
+      "versionId": "mgr-release"
+    }
+  },
+  "bindings": []
+}
